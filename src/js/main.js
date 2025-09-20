@@ -19,6 +19,8 @@ surveyCollection.forEach(item => {
         text.classList.toggle("d-none");
     });
 })
+
+
 const rangeWrapper = document.querySelector('.range-wrapper');
 const rangeInput = rangeWrapper.querySelector('#customRange');
 const sliderFill = rangeWrapper.querySelector('.slider-fill');
@@ -27,13 +29,14 @@ const rangeValue = rangeWrapper.querySelector('.range-value');
 
 const rangeChangeHandler = (event) => {
     const rangeElement = event.target;
-    const value = (rangeElement.value - rangeElement.min) / (rangeElement. max - rangeElement.min) * 100;
-    sliderFill.style.width = value + '%'; 
-    sliderTrumb.style.left = value + '%';
+    const value = (rangeElement.value - rangeElement.min) / (rangeElement. max - rangeElement.min) * 30000;
+    sliderFill.style.width = value/78.94  + 'px'; 
+    sliderTrumb.style.left = value/78.94  + 'px';
     rangeValue.textContent = value.toFixed();
 }
 
 rangeInput.addEventListener('input', (evt) => rangeChangeHandler(evt));
+
 
 
 

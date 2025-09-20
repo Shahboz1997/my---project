@@ -320,6 +320,13 @@
   align-items: center;
   justify-content:space-between;
 }
+.inputbot{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2px;
+  color: #607D8B;
+}
 .range-container {
   position: relative;
   width: 385px;
@@ -328,8 +335,8 @@
   display: inline;
 }
 input[type="range"] {
-  -webkit-appearance: none;
-  width: 92.988%;
+  // -webkit-appearance: none;
+  max-width: 100%;
   height: 10px;
   background: transparent;
   position: relative;
@@ -847,7 +854,7 @@ input[type="range"]::-moz-range-thumb {
  .list-card{
 display: flex;
 align-items: center;
-justify-content: space-around;
+justify-content: space-between;
 margin-bottom: 8px;
 padding: 20px 15px;
 // gap: 235px;
