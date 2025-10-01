@@ -715,12 +715,10 @@ input[type="range"]::-moz-range-thumb {
 }
 .chapter-two {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   gap: 19px;
 }
 .container-advantages {
-  padding: 75px 55px 83px;
+  padding: 162px 55px 83px 58px;
   background-color: var(--white-space);
   border-radius: 10px;
   height: 100%;
@@ -790,8 +788,7 @@ input[type="range"]::-moz-range-thumb {
  }
  .list-variant {
    display: flex;
-   align-items: center;
-   justify-content: space-around;
+  
    gap: 20px;
    margin-bottom: 15px;
  }
