@@ -1,24 +1,24 @@
-// console.log('Hello world');
-// const surveyContainer = document.querySelector(".survey-page");
-// const surveyCollection = surveyContainer.querySelectorAll(".survey-item");
+console.log('Hello world');
+const surveyContainer = document.querySelector(".survey-page");
+const surveyCollection = surveyContainer.querySelectorAll(".survey-item");
 
-// surveyCollection.forEach(item => {
-//     item.addEventListener("click", (evt) => { 
-//         console.log("item", item);
-//         const lorem= item.querySelector(".survey-text"); 
-//         if (!lorem.classList.contains("d-none")) {
-//             lorem.classList.remove("d-none");
-//         }
-//         else {
-//       lorem.classList.add("d-none");
-//     };
-//         console.log("evt", evt.target);
-//         const element = evt.target;
-//         const parent = element.closest(".survey-item");
-//         const text = parent.querySelector(".survey-text");
-//         text.classList.toggle("d-none");
-//     });
-// })
+surveyCollection.forEach(item => {
+    item.addEventListener("click", (evt) => { 
+        console.log("item", item);
+        const lorem= item.querySelector(".survey-text"); 
+        if (!lorem.classList.contains("d-none")) {
+            lorem.classList.remove("d-none");
+        }
+        else {
+      lorem.classList.add("d-none");
+    };
+        console.log("evt", evt.target);
+        const element = evt.target;
+        const parent = element.closest(".survey-item");
+        const text = parent.querySelector(".survey-text");
+        text.classList.toggle("d-none");
+    });
+})
 
 
 const rangeWrapper = document.querySelector('.range-wrapper');
@@ -34,7 +34,6 @@ const rangeChangeHandler = (event) => {
     sliderTrumb.style.left = value/78.94  + 'px';
     rangeValue.textContent = value.toFixed();
 }
-
 rangeInput.addEventListener('input', (evt) => rangeChangeHandler(evt));
 
 
