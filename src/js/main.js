@@ -21,21 +21,21 @@
 // })
 
 
-// const rangeWrapper = document.querySelector('.range-wrapper');
-// const rangeInput = rangeWrapper.querySelector('#customRange');
-// const sliderFill = rangeWrapper.querySelector('.slider-fill');
-// const sliderTrumb = rangeWrapper.querySelector('.slider-trumb');
-// const rangeValue = rangeWrapper.querySelector('.range-value');
+const rangeWrapper = document.querySelector('.range-wrapper');
+const rangeInput = rangeWrapper.querySelector('#customRange');
+const sliderFill = rangeWrapper.querySelector('.slider-fill');
+const sliderTrumb = rangeWrapper.querySelector('.slider-trumb');
+const rangeValue = rangeWrapper.querySelector('.range-value');
 
-// const rangeChangeHandler = (event) => {
-//     const rangeElement = event.target;
-//     const value = (rangeElement.value - rangeElement.min) / (rangeElement. max - rangeElement.min) * 30000;
-//     sliderFill.style.width = value/78.94  + 'px'; 
-//     sliderTrumb.style.left = value/78.94  + 'px';
-//     rangeValue.textContent = value.toFixed();
-// }
+const rangeChangeHandler = (event) => {
+    const rangeElement = event.target;
+    const value = (rangeElement.value - rangeElement.min) / (rangeElement. max - rangeElement.min) * 30000;
+    sliderFill.style.width = value/78.94  + 'px'; 
+    sliderTrumb.style.left = value/78.94  + 'px';
+    rangeValue.textContent = value.toFixed();
+}
 
-// rangeInput.addEventListener('input', (evt) => rangeChangeHandler(evt));
+rangeInput.addEventListener('input', (evt) => rangeChangeHandler(evt));
 
 
 const hamburger = document.querySelector(".hamburger");

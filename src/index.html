@@ -19,7 +19,7 @@
 <header class="header">
         <nav class="navbar">
             <a href="#" class="nav-logo">
-                 <img src="logo.png" alt="#" width="94" height="40"/>
+                 <img src="img/logo.png" alt="loan" width="94" height="40"/>
             </a>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -48,158 +48,121 @@
             </div>
         </nav>
 </header>
-    <!-- <header class="page-header">
-        <div class="container">
-            <div class="nav-bar">
-                <a href="#" class="nav-logo">
-                    <img src="img/logo.png" alt="#" width="94" height="40"/>
-                </a>   
-                    <ul>
-                        <li> 
-                            <a href="#" class="nav-link">О компании</a> 
-                        </li>
-                        <li> 
-                            <a href="#" class="nav-link active">Как получить деньги</a> 
-                        </li>              
-                        <li> 
-                            <a href="#" class="nav-link" href="howfinish">Как погасить заeм</a> 
-                        </li>            
-                        <li> 
-                            <a href="#" class="nav-link">Зарплата вперед</a> 
-                        </li>
-                    </ul>  
-                    <div class="nav-item">               
-                        <svg 
-                            width="14" 
-                            height="16"            
-                            viewBox="0 0 14 16" 
-                            fill="" 
-                            src="img/momentum/svg">
-                            <path 
-                            d="M9.41203 7.41891C10.4358 6.67225 11.1025 5.46387 11.1025 4.10256C11.1025 1.84041 9.26209 0 6.99993 0C4.73778 0 2.89737 1.84041 2.89737 4.10256C2.89737 5.46387 3.56403 6.67225 4.58784 7.41891C2.04284 8.39281 0.230713 10.8603 0.230713 13.7436C0.230713 14.9878 1.24293 16 2.48712 16H11.5127C12.7569 16 13.7691 14.9878 13.7691 13.7436C13.7691 10.8603 11.957 8.39281 9.41203 7.41891ZM4.12815 4.10256C4.12815 2.51906 5.41643 1.23078 6.99993 1.23078C8.58343 1.23078 9.87171 2.51906 9.87171 4.10256C9.87171 5.68606 8.58343 6.97437 6.99993 6.97437C5.41643 6.97437 4.12815 5.68606 4.12815 4.10256ZM11.5127 14.7692H2.48712C1.92159 14.7692 1.46149 14.3091 1.46149 13.7436C1.46149 10.6896 3.94599 8.20509 6.99996 8.20509C10.0539 8.20509 12.5384 10.6896 12.5384 13.7436C12.5384 14.3091 12.0783 14.7692 11.5127 14.7692Z" fill="#fff"/>
-                        </svg>                                          
-                        <button type="button" class="login">
-                            Войти
-                        </button>
-                    </div>                     
+<main class="page-main">
+        <!-- hero section -->
+    <section class="hero-section">
+    <div class="container">
+        <div class="hero-section-wrapper">
+            <div class="section-content">
+                <div class="hero-image-wrapper">
+                    <img src="img/hand.png" alt="hero" class="hand-image" width="707" height="847">
+                </div>
+                <div class="hero-details">
+                    <h2 class="title">ZERO — <br> значит <span class="color-green">0!</span></h1>
+                    <h3 class="subtitle">Первый заём с промокодом <br> "ZERO"-бесплатно! *</h3>
+                    <p class="description color-dark-grey">(активируете промокод в Вашем <br class="cabe">Личном кабините)</p>
+                </div>
             </div>
-        </div>
-    </header>  -->
-    <!-- <main class="page-main">
-        hero section
-         <section class="hero-section">
-            <div class="container">
-                <div class="hero-section-wrapper">
-                    <div class="section-content">
-                        <div class="hero-image-wrapper">
-                            <img src="img/hand.png" alt="hero" class="hand-image" width="707" height="847">
+            <div class="form-wrapper">
+                <form class="for">
+                    <div class="loan">
+                        <a href="#" class="first-loan"> Первый заем </a>
+                        <a href="#" class="second-loan">Повторный заем </a>
+                    </div>
+                    <div class="top-elements">
+                        <p class="label">Сумма</p>
+                            <div class="range-wrapper">
+                                <div class="cash-flow">
+                                    <div class="range-value">0</div>
+                                    <div class="tenge">рублей</div>
+                                </div>
+                                    <div class="range-container">
+                                        <div class="slider-background"></div>
+                                        <div class="slider-fill" style="max-width: 100%;"></div>
+                                        <div class="slider-trumb" style="left:0;">
+                                            <svg 
+                                                width="27" 
+                                                height="9" 
+                                                viewBox="0 0 27 9" 
+                                                fill="none"   
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect 
+                                                width="27" 
+                                                height="9" 
+                                                rx="4.5" 
+                                                fill=""/>
+                                            </svg>
+                                        </div>
+                                        <input type="range" min="1000" step="1000"  max="30000" value="1000" id="customRange">
+                                    </div>
+                                    <div class="inputbot">
+                                        <span>1 000</span>
+                                        <span>30 000</span>
+                                    </div>
+                            </div>
+                        <p class="label">На срок</p>
+                        <div class="range-wrapper">
+                                <div class="cash-flow">
+                                    <div class="range-value">0</div>
+                                    <div class="tenge">дней</div>
+                                </div>
+                                    <div class="range-container">
+                                        <!-- <div class="slider-background"></div>
+                                        <div class="slider-fill" style="width: 0;"></div>
+                                        <div class="slider-trumb" style="left: 0;">
+                                            <svg 
+                                                width="27" 
+                                                height="9" 
+                                                viewBox="0 0 27 9" 
+                                                fill="none"   
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect 
+                                                width="27" 
+                                                height="9" 
+                                                rx="4.5" 
+                                                fill=""/>
+                                            </svg>
+                                        </div>
+                                        <input type="range" min="7" max="30" value="0" id="customRange">
+                                    </div> -->
+                                    <div class="inputbot">
+                                        <span>7</span>
+                                        <span>30</span>
+                                    </div>
+                            </div>
+                    </div> 
+                    <div class="repayment-container">
+                        <div class="repayment-item">
+                            <div class="repayment-name">вы берете</div>
+                            <div class="repayment-number">5000 <span class="pay">руб.</span> </div>
                         </div>
-                        <div class="hero-details">
-                            <h2 class="title">ZERO — <br> значит <span class="color-green">0!</span></h1>
-                            <h3 class="subtitle">Первый заём с промокодом <br> "ZERO"-бесплатно! *</h3>
-                            <p class="description color-dark-grey">(активируете промокод в Вашем <br class="cabe">Личном кабините)</p>
+                        <div class="repayment-item"> 
+                            <div class="repayment-name">срок погашения</div>
+                            <div class="repayment-number">11 декабря, 2020 </div>
+                        </div>
+
+                        <div class="repayment-item">
+                            <div class="repayment-name">сумма к возврату</div> 
+                            <div class="repayment-number">5000 <span class="money">руб.</span>  </div>   
                         </div>
                     </div>
-                    <div class="form-wrapper">
-                        <form class="for">
-                            <div class="loan">
-                                <a href="#" class="first-loan"> Первый заем </a>
-                                <a href="#" class="second-loan">Повторный заем </a>
-                            </div>
-                            <div class="top-elements">
-                                <p class="label">Сумма</p>
-                                    <div class="range-wrapper">
-                                        <div class="cash-flow">
-                                            <div class="range-value">0</div>
-                                            <div class="tenge">рублей</div>
-                                        </div>
-                                            <div class="range-container">
-                                                <div class="slider-background"></div>
-                                                <div class="slider-fill" style="max-width: 100%;"></div>
-                                                <div class="slider-trumb" style="left:0;">
-                                                    <svg 
-                                                        width="27" 
-                                                        height="9" 
-                                                        viewBox="0 0 27 9" 
-                                                        fill="none"   
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <rect 
-                                                        width="27" 
-                                                        height="9" 
-                                                        rx="4.5" 
-                                                        fill=""/>
-                                                    </svg>
-                                                </div>
-                                                <input type="range" min="1000" step="1000"  max="30000" value="1000" id="customRange">
-                                            </div>
-                                            <div class="inputbot">
-                                                <span>1 000</span>
-                                                <span>30 000</span>
-                                            </div>
-                                    </div>
-                                <p class="label">На срок</p>
-                                <div class="range-wrapper">
-                                        <div class="cash-flow">
-                                            <div class="range-value">0</div>
-                                            <div class="tenge">дней</div>
-                                        </div>
-                                            <div class="range-container">
-                                                <div class="slider-background"></div>
-                                                <div class="slider-fill" style="width: 0;"></div>
-                                                <div class="slider-trumb" style="left: 0;">
-                                                    <svg 
-                                                        width="27" 
-                                                        height="9" 
-                                                        viewBox="0 0 27 9" 
-                                                        fill="none"   
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <rect 
-                                                        width="27" 
-                                                        height="9" 
-                                                        rx="4.5" 
-                                                        fill=""/>
-                                                    </svg>
-                                                </div>
-                                               <input type="range" min="7" max="30" value="0" id="customRange">
-                                            </div>
-                                            <div class="inputbot">
-                                                <span>7</span>
-                                                <span>30</span>
-                                            </div>
-                                    </div>
-                            </div> 
-                            <div class="repayment-container">
-                                <div class="repayment-item">
-                                    <div class="repayment-name">вы берете</div>
-                                    <div class="repayment-number">5000 <span class="pay">руб.</span> </div>
-                                </div>
-                                <div class="repayment-item"> 
-                                    <div class="repayment-name">срок погашения</div>
-                                    <div class="repayment-number">11 декабря, 2020 </div>
-                                </div>
-
-                                <div class="repayment-item">
-                                    <div class="repayment-name">сумма к возврату</div> 
-                                    <div class="repayment-number">5000 <span class="money">руб.</span>  </div>   
-                                </div>
-                            </div>
-                            <div class="apply-btn">
-                                <a href="#" class="btn-yellow">Подать заявку</a>
-                            </div>       
-                            <div class="link-wrapper">
-                                <a href="#" class="requirement-link">Как не допускать просроченной задолженности. </a>
-                            </div>     
-                            <div class="link-wrapper">
-                                <a href="#" class="requirement-link">Требования к заемщикам</a>
-                            </div>      
-                            <div class="calculation">
-                                <p>Расчет носит ознакомительный характер </p>
-                                <p>Окончательные условия будут определены при подаче заявки в ЛК</p>
-                            </div>
-                        </form>  
-                    </div>                  
-                </div>
-        </section> -->
+                    <div class="apply-btn">
+                        <a href="#" class="btn-yellow">Подать заявку</a>
+                    </div>       
+                    <div class="link-wrapper">
+                        <a href="#" class="requirement-link">Как не допускать просроченной задолженности. </a>
+                    </div>     
+                    <div class="link-wrapper">
+                        <a href="#" class="requirement-link">Требования к заемщикам</a>
+                    </div>      
+                    <div class="calculation">
+                        <p>Расчет носит ознакомительный характер </p>
+                        <p>Окончательные условия будут определены при подаче заявки в ЛК</p>
+                    </div>
+                </form>  
+            </div>                  
+        </div>
+    </section>
         <!-- advance section-->
         <!-- <section class="advance-section"> -->
             <!-- <div class="container">
