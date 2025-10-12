@@ -47,9 +47,6 @@
   /*Site max width*/
 
 }
-body{
-  background-color: var(--)
-}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
   @font-face {
     font-family: "Mazzard";
@@ -85,11 +82,10 @@ a {
 .header{
     border-bottom: 1px solid #E2E8F0;
     width: 100%;
-    margin: 0 auto;
-    padding: 0 102px;
     position: fixed;
     background-color: #10e4c4;
     z-index: 1;
+    padding: 0 98px 0 102px;
 }
 
 .navbar {
@@ -753,17 +749,13 @@ input[type="range"]::-moz-range-thumb {
   margin-bottom: 128px;
 }
 .chapter-two {
-  display: flex;
+
   gap: 19px;
 }
 .container-advantages {
-  padding: 162px 55px 83px 58px;
+  padding: 85px 100px 85px 100px;
   background-color: var(--white-space);
   border-radius: 10px;
-  height: 100%;
-  width: 100%;
-  max-width: 500px;
-  display: flex;
   flex-direction: column;
   box-shadow:
     inset 0 -3em 3em rgba(0, 0, 0, 0.1),
@@ -997,7 +989,6 @@ justify-content: center;
 }
  .successfull-loan{
   display: flex;
-  width: 100%;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -1256,7 +1247,7 @@ footer {
     text-align: center;
   }
   .chapter-two{
-    flex-wrap: wrap;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1279,6 +1270,26 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  .successfull-loan{
+    flex-wrap: wrap;
+    gap:50px;
+  }
+}
+ @media (max-width:1140px) {
+  .chapter-two, .hero-section-wrapper{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width:1080px) {
+  .survey-question{
+    flex-direction: column;
+  }
+.first-question, .second-question{
+  width: 100%;
+} 
 }
 @media (max-width:900px) {
   .container-about{
@@ -1305,8 +1316,20 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  .image-app{
+    height: 350px;
+  }
   .container-about{
     flex-wrap: wrap;
+  }
+  .loan-auto, .income-pay{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loan-example, .income-salary{
+    width: 100%;
   }
 }
 @media (max-width:765px) {
@@ -1341,6 +1364,12 @@ h2 .title {
     align-items: center;
     justify-content: center;
   }
+  .first-question, .second-question{
+  width: 100%;
+}
+.first-question, .second-question{
+  width: 100%;
+}
   .list-card{
     flex-wrap: wrap;
   }
@@ -1360,7 +1389,6 @@ h2 .title {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 27px;
     }
     .advance .section-title{
       text-align: end;
@@ -1381,6 +1409,9 @@ font-size: 34px;
     align-items: center;
     justify-content: center;
   }
+  .first-question, .second-question{
+  width: 100%;
+}
   .top-elements{
     flex-wrap: wrap;
   }
@@ -1411,7 +1442,6 @@ font-size: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left:40px;
 }
 .hero-section .hero-details .title{
   text-align: center;
@@ -1426,6 +1456,9 @@ font-size: 34px;
 }
 .repayment-container{
   flex-wrap: wrap;
+}
+.first-question, .second-question{
+  width: 100%;
 }
 }
 @media(max-width:450px){
@@ -1450,6 +1483,13 @@ font-size: 34px;
 // .container-about, .approval-details{
 //     width: max-content;
 // }
+  .container{
+    margin: 0 auto;
+    padding: 0;
+}
+  .image-app{
+    height: 250px;
+  }
 }
 @media (max-width:524px){
   .hero-details h2{
@@ -1459,11 +1499,14 @@ font-size: 34px;
   font-weight: 700;
   text-align: center;
 }
+.first-question, .second-question{
+  width: 100%;
+}
+.wrm-image{
+  height: 200px;
+}
 .hero-image{
   height: 50%;
-}
-.navbar{
-  margin: 0 -85px;
 }
 .subtitle h3{
       padding-left: 100px;
@@ -1500,6 +1543,16 @@ font-size: 34px;
     align-items: center;
     justify-content: center
 }
+  .container{
+    margin: 0 auto;
+    padding: 0;
+}
+}
+@media (max-width:412px){
+  .container{
+    margin: 0 auto;
+    padding: 0;
+}
 }
 @media (max-width:350px){
   .hero-details {
@@ -1507,6 +1560,12 @@ font-size: 34px;
 }
 .inputbot, .cash-flow{
   flex-wrap: wrap;
+}
+.wrm-image{
+  height: 180px;
+}
+.first-question, .second-question{
+  width: 100%;
 }
 // .container-about, .approval-details{
 //     width: max-content;
@@ -1518,6 +1577,10 @@ font-size: 34px;
 .container-advantages{
   width: max-content;
   margin-left: 161px;
+}
+.container{
+    margin: 0 auto;
+    padding: 0;
 }
 .container-about, .approval-details{
   flex-wrap: wrap;
@@ -1531,4 +1594,17 @@ font-size: 34px;
 .section-title{
   padding-bottom: 72px;
 }
+.section-title{
+  text-align: center;
+    font-size: 24px;
+    letter-spacing: normal;
+    font-style: oblique;
+}
+.container{
+    margin: 0 auto;
+    padding: 0;
+}
+  .image-app{
+    height: 150px;
+  }
 }
